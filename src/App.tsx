@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styled from "styled-components";
+
+import GoogleLoginPage from "./components/GoogleLoginPage";
+
+const Container = styled.div`
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 10px;
+  padding: 50px;
+`;
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Container>
+            <GoogleLoginPage />
+        </Container>
+    );
 }
 
 export default App;
